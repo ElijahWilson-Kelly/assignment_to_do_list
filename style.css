@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 100;
+  color: rgb(66, 66, 66);
+}
+
+main {
+  width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+#add-item-form {
+  width: 660px;
+  margin: 20px auto;
+  display: flex;
+  gap: 20px;
+}
+
+#add-item-form input,
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #80808066;
+}
+
+#add-item-form input {
+  flex-grow: 1;
+}
+
+button[type="submit"]:hover {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  border-color: black;
+}
+
+#to-do-list {
+  width: 100%;
+  list-style: none;
+  border-radius: 5px;
+  border: 1px solid #80808066;
+}
+
+#to-do-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  gap: 50px;
+}
+
+#to-do-list li + li {
+  border-top: 1px solid #80808066;
+}
+
+li input[type="text"] {
+  flex-grow: 1;
+  font-weight: 100;
+  font-size: 0.9rem;
+  color: 1px solid #3f3f3f66;
+  border: none;
+  padding: 8px;
+}
+
+li input[type="text"]:focus {
+  outline: solid #80808033 1px;
+}
+
+li.complete input[type="text"] {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.fa-trash-o {
+  color: red;
+}
+.fa-trash-o:hover {
+  color: black;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
